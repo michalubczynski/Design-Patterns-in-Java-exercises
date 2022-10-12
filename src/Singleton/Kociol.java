@@ -1,15 +1,24 @@
 package Singleton;
 
-public class Kociol {
-    private static Kociol kociol = new Kociol();
+public final class Kociol {
+    private static Kociol kociol;
+    public String value;
     private String zawartosc;
     private boolean pusty=true,ugotowany;
-    protected Kociol(){
+    private Kociol(String value){
+        this.value=value;
         zawartosc = "Pusty";
+    }
+    public static Kociol getInstance(String value) {
+        if (kociol == null) {
+            kociol = new Kociol(value);
+        }
+        return kociol;
     }
     public static Kociol getKociol(){
         return kociol;
     }
+
 
     public String getZawartosc() {
         return zawartosc;

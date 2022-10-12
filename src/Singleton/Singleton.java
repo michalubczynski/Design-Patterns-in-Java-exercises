@@ -2,12 +2,14 @@ package Singleton;
 
 public class Singleton {
     public static void main(String[] args){
-        Kociol kociol = new Kociol();
+        Kociol kociol = Kociol.getInstance("Pierwszy") ;
+        kociol.getZawartosc();
         kociol.wypelnij();
         kociol.ugotuj();
         kociol.wylej();
         kociol.wylej();
-        //Kociol kociol1 = new Kociol();
-        //kociol1.isPusty();
+        System.out.println(kociol.toString() + kociol.value );
+        Kociol kociol1 = Kociol.getInstance("Drugi") ;
+        System.out.println(kociol1.toString() + kociol1.value);
     }
 }

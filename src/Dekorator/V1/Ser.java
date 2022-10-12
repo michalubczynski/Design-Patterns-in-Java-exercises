@@ -12,6 +12,6 @@ public class Ser extends DodatkiDoBulkiDecorator{
 
     @Override
     public String Opis() {
-        return bułka.Opis()+"ze srem";
+        return bułka.Opis() +" z serem";
     }
 }

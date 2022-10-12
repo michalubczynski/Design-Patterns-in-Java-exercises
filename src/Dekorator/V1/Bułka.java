@@ -1,7 +1,9 @@
 package Dekorator.V1;
 
 public abstract class Bułka {
-
+    private String opis;
     public abstract float PodajCene();
-    public abstract String Opis();
+    public String  Opis(){
+        return " Oto bułka";
+    };
 }

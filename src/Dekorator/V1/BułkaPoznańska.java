@@ -9,6 +9,6 @@ public class BułkaPoznańska extends Bułka{
 
     @Override
     public String Opis() {
-        return "Bulka Poznanska";
+        return  super.Opis() + " Poznanska";
     }
 }
