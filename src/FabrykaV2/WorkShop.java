@@ -1,16 +1,12 @@
 package FabrykaV2;
 
 
-import FabrykaV1.MineralOil;
-import FabrykaV1.SemiSyntheticOil;
-import FabrykaV1.SyntheticOil;
-
 public abstract class WorkShop {
 
-    public abstract Oil CreateOil(String type);
-    void changeOil(String oil){
-        Oil o;
-        o = CreateOil(oil);
+    public abstract Oil createOil(String type, Oil o);
+    void changeOil(String type){
+        Oil o=null;
+        o = createOil(type, o);
         o.RemoveOil();
         o.FillOil();
         o.Utilization();

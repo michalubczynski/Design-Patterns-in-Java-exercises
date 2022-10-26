@@ -3,9 +3,8 @@ package FabrykaV2;
 public class MotorcycleWorkShop extends WorkShop{
 
     @Override
-    public Oil CreateOil(String type) {
+    public Oil createOil(String type, Oil oil) {
 
-        Oil oil = null;
         if(type == "semi-moto"){
             oil = new SemiSyntheticMotoOil();
             System.out.println(oil.ToString()) ;

@@ -1,6 +1,6 @@
-package FabrykaV3;
+package FabrykaV2;
 
-public class main { //
+public class Main { //
         public static void main(String[] args){
                 BasicWorkShop cars = new BasicWorkShop();
                 cars.changeOil("semi");

@@ -1,9 +1,9 @@
-package FabrykaV2;
+package FabrykaV3;
 
-public class main { //
+public class Main { //
         public static void main(String[] args){
                 BasicWorkShop cars = new BasicWorkShop();
-                cars.changeOil("semi");
+                cars.changeOil("synth");
                 MotorcycleWorkShop moto = new MotorcycleWorkShop();
                 moto.changeOil("semi-moto");
         }

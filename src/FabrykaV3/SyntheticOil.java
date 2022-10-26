@@ -3,11 +3,12 @@ package FabrykaV3;
 import java.util.ArrayList;
 
 public class SyntheticOil  extends Oil {
+    FabricOil fabricOil = new CommonOilFabric();
+
     SyntheticOil(){
         price=0;
-        type10W =  new CommonOilFabric().oilTen("thirty");
+        type10W =  fabricOil.oilTen("thirty");
         ageOfOil = "20.10.2022";
-        invoice.add(type10W.toString());
         RemoveOil();
         FillOil();
         Utilization();

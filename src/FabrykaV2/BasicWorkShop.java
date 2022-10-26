@@ -5,9 +5,9 @@ package FabrykaV2;
 public class BasicWorkShop extends WorkShop{
 
     @Override
-    public Oil CreateOil(String type) {
+    public Oil createOil(String type, Oil oil) {
 
-            Oil oil = null;
+
             if(type == "semi"){
                 oil = new SemiSyntheticOil();
                 System.out.println(oil.ToString()) ;

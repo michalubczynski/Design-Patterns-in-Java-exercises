@@ -1,9 +1,11 @@
 package FabrykaV3;
 
 public class MineralOil extends Oil {
+    FabricOil fabricOil = new CommonOilFabric();
+
     MineralOil(){
         price=0;
-        type10W = new CommonOilFabric().oilTen("else");
+        type10W = fabricOil.oilTen("else");
         ageOfOil = "15.1.2021";
         RemoveOil();
         FillOil();

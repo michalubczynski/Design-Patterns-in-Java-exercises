@@ -1,9 +1,11 @@
 package FabrykaV3;
 
 public class SemiSyntheticOil extends Oil {
+    FabricOil fabricOil = new CommonOilFabric();
+
     SemiSyntheticOil(){
         price=0;
-        type10W = new CommonOilFabric().oilTen("thirty");
+        type10W = fabricOil.oilTen("thirty");
         ageOfOil = "25.10.2022";
         RemoveOil();
         FillOil();
