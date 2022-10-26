@@ -1,7 +1,8 @@
 package FabrykaV1;
 
 public class WorkShop {
-    void changeOil(SimpleOilFactory s){
+    SimpleOilFactory s = new SimpleOilFactory();
+    void changeOil(){
         Oil o;
         o = s.CreateOil("semi");
         o.RemoveOil();

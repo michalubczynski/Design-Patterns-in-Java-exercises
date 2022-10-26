@@ -10,7 +10,6 @@ public abstract class WorkShop {
         o.RemoveOil();
         o.FillOil();
         o.Utilization();
-        System.out.println(o.ToString());
     }
 
 }
