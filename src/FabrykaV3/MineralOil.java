@@ -1,9 +1,12 @@
 package FabrykaV3;
 
+import FabrykaV3.OilFabric.CommonOilFabric;
+import FabrykaV3.OilFabric.FabricOil;
+
 public class MineralOil extends Oil {
     FabricOil fabricOil = new CommonOilFabric();
 
-    MineralOil(){
+    public MineralOil(){
         price=0;
         type10W = fabricOil.oilTen("else");
         ageOfOil = "15.1.2021";

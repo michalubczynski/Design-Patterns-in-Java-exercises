@@ -1,11 +1,12 @@
 package FabrykaV3;
 
-import java.util.ArrayList;
+import FabrykaV3.OilFabric.FabricOil;
+import FabrykaV3.OilFabric.HighPerformanceOilFabric;
 
 public class SyntheticMotoOil extends Oil {
     FabricOil fabricOil = new HighPerformanceOilFabric();
 
-    SyntheticMotoOil(){
+    public SyntheticMotoOil(){
         price=0;
         type5W = fabricOil.oilFive("else");
         ageOfOil = "20.10.2020";

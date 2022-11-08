@@ -1,9 +1,12 @@
 package FabrykaV3;
 
+import FabrykaV3.OilFabric.FabricOil;
+import FabrykaV3.OilFabric.HighPerformanceOilFabric;
+
 public class MineralMotoOil extends Oil {
     FabricOil fabricOil = new HighPerformanceOilFabric();
 
-    MineralMotoOil(){
+    public MineralMotoOil(){
         price=0;
         type5W = fabricOil.oilFive("thirty");
         ageOfOil = "15.1.2020";

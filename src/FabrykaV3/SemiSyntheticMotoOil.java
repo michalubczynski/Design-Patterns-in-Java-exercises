@@ -1,8 +1,11 @@
 package FabrykaV3;
 
+import FabrykaV3.OilFabric.FabricOil;
+import FabrykaV3.OilFabric.HighPerformanceOilFabric;
+
 public class SemiSyntheticMotoOil extends Oil {
     FabricOil fabricOil = new HighPerformanceOilFabric();
-    SemiSyntheticMotoOil(){
+    public SemiSyntheticMotoOil(){
         price=0;
         type10W =  fabricOil.oilTen("else");
         ageOfOil = "25.10.2022";
