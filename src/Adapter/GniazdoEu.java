@@ -1,22 +1,14 @@
 package Adapter;
 
-public class GniazdoEu {
+public class GniazdoEu implements GniazdoEuInterface {
     private final String gniazdoEu;
 
     public GniazdoEu() {
         this.gniazdoEu = "->gniazdoEU";
     }
 
-    String getGniazdoEU(){
-        return gniazdoEu;
-    }
-
-    public String podepnij(){
-        return this.getGniazdoEU();
-    }
-
     @Override
-    public String toString() {
-        return gniazdoEu;
+    public void podepnijEu() {
+        System.out.println(gniazdoEu);
     }
 }

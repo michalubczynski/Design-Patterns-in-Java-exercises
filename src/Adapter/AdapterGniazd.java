@@ -3,16 +3,16 @@ package Adapter;
 import java.util.Arrays;
 
 public class AdapterGniazd implements GniazdoGbInterface {
-    private final GniazdoEu eu;
+     GniazdoEuInterface eu;
 
-    public AdapterGniazd(GniazdoGb gb) {
-        this.eu = gb.toString() + eu.podepnij();
-
+    public AdapterGniazd(GniazdoEuInterface eu) {
+        this.eu = eu;
     }
 
-
     @Override
-    public String podepnij() {
-        return eu.toString();
+    public void podepnij() {
+        System.out.print("jestem gniazdem EU opakowanym przez GB ");
+        eu.podepnijEu();
+
     }
 }

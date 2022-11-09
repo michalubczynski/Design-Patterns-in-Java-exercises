@@ -1,15 +1,22 @@
 package Adapter;
 
 public class GniazdoGb implements GniazdoGbInterface{
-    private final String gniazdoGb;
+    private  String gniazdoGb;
 
+    public void setGniazdoGb(String gb){
+        gniazdoGb = gb;
+    }
+    public String getGniazdoGb(){
+        return  gniazdoGb;
+    }
     public GniazdoGb() {
-        this.gniazdoGb = "->gniazdoGb";
+        this.gniazdoGb = "Stworzono ->gniazdoGb";
     }
 
 
     @Override
-    public String podepnij() {
-        return gniazdoGb;
+    public void podepnij() {
+        System.out.println(gniazdoGb);
+
     }
 }

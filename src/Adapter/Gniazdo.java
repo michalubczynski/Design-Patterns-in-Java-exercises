@@ -5,10 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Gniazdo { // KLIENT
-    private final String gniazdo;
-    private final List<GniazdoGbInterface> content = new ArrayList<>();
-    public Gniazdo(String gniazdo){
-        this.gniazdo=gniazdo;
+    public static void main(String[] args){
+        GniazdoGbInterface gniazdoGbInterface = new GniazdoGb();
+        gniazdoGbInterface.podepnij();
+        gniazdoGbInterface = new AdapterGniazd(new GniazdoEu());
+        gniazdoGbInterface.podepnij();
     }
 
 }
