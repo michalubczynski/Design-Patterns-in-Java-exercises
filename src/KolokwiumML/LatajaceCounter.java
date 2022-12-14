@@ -9,7 +9,6 @@ public class LatajaceCounter implements  Latajace{
         this.orzel = orzel;
         observable = new Observable(this);
     }
-
     public static int getLiczbaGlosow() {
         return liczbaGlosow;
     }
