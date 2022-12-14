@@ -1,12 +1,19 @@
 package KolokwiumML;
 
-public class OrzelPolski implements  Latajace{
+public final class OrzelPolski implements  Latajace{
+
+    private static OrzelPolski orzelPolski;
     Observable observable;
 
-    public OrzelPolski() {
+    private OrzelPolski() {
         observable = new Observable(this);
     }
-
+    public static OrzelPolski getInstance(){
+        if(orzelPolski == null){
+            orzelPolski = new OrzelPolski();
+        }
+        return orzelPolski;
+    }
     @Override
     public void glos() {
         System.out.println("Polski-glos");

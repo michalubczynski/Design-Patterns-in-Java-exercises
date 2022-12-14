@@ -13,7 +13,7 @@ public class PtakFactory extends AbstractPtakFactory {
 
     @Override
     public Latajace createOrzelPolski() {
-        return new OrzelPolski();
+        return OrzelPolski.getInstance();
     }
 
 

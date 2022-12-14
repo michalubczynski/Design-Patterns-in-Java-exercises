@@ -13,7 +13,7 @@ public class CountingPtakFactory extends AbstractPtakFactory {
 
     @Override
     public Latajace createOrzelPolski() {
-        return new LatajaceCounter(new OrzelPolski());
+        return OrzelPolski.getInstance();
     }
 
 
